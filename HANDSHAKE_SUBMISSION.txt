@@ -1,0 +1,19 @@
+ASTRA RUSH — Real-Time Multiplayer Space Arena
+
+Astra Rush is a real-time two-player browser game where remote players race through a cinematic celestial arena to capture shifting star cores. Each capture earns one point; the first pilot to 10 wins.
+
+The project combines a server-authoritative Socket.IO multiplayer system with an original cinematic interface inspired by northern lights, orbital motion, and editorial sci-fi design. I focused on making the rules understandable immediately while giving the game a distinctive visual identity.
+
+FEATURES
+• Real-time multiplayer across separate devices
+• Private five-character room codes
+• Server-authoritative movement, collision, scoring, and win state
+• Keyboard and mobile touch controls
+• Animated cinematic environment and responsive UI
+• Waiting, countdown, victory, disconnect, and rematch states
+• Responsive layout for desktop and mobile
+
+TECH
+HTML, CSS, JavaScript, HTML Canvas, Node.js, Express, Socket.IO
+
+Designed and built by Minahil.

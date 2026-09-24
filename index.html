@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Astra Rush — Multiplayer</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<section id="lobby" class="lobby">
+ <div class="cinematic"><img src="cinematic-world.png"><div class="cinematicMask"></div><div class="drift d1"></div><div class="drift d2"></div><div class="sparkLayer"></div></div>
+ <nav><div class="logo">M<sup>✦</sup></div><div class="navlinks"><b>PLAY</b><span>ABOUT</span><span>SETTINGS</span></div><div class="maker">☾ &nbsp; MINAHIL</div></nav>
+ <div class="lobbyContent">
+  <div class="intro">
+   <div class="eyebrow">REAL-TIME · TWO PLAYER</div>
+   <h1>ASTRA <i>RUSH</i></h1>
+   <div class="tag">RACE <b>✦</b> COLLECT <b>✦</b> DOMINATE</div>
+   <h2>A MULTIPLAYER SPACE ARENA</h2>
+   <p class="sub">Guided by the stars. Powered by you.</p>
+   <div class="controls">
+    <label>YOUR CALLSIGN</label><input id="name" maxlength="18" placeholder="Minahil">
+    <button id="create" class="primary">CREATE GAME <span>↗</span></button>
+    <div class="join"><input id="roomInput" maxlength="5" placeholder="ROOM CODE"><button id="join">JOIN <span>→</span></button></div>
+    <small id="error"></small>
+   </div>
+   <div class="how">
+    <strong>HOW TO PLAY</strong>
+    <div><b>ϟ</b><p><span>CHASE</span>Move your ship to the star core before your rival.</p></div>
+    <div><b>✦</b><p><span>SCORE</span>Every core captured earns one point.</p></div>
+    <div><b>♕</b><p><span>WIN</span>First pilot to 10 claims the sector.</p></div>
+   </div>
+  </div>
+  <div class="visualHints">
+<div class="flyingShip shipOne"><span>◆</span><i></i></div>
+<div class="flyingShip shipTwo"><span>◆</span><i></i></div>
+<div class="coreHint">✦</div><div class="pilotHint one">MINAHIL</div><div class="pilotHint two">P2</div>
+<div class="sectorName">NORTHERN SKY · SECTOR 07</div></div>
+ </div>
+ <div class="lobbyBottom"><span>WASD / ARROW KEYS</span><em>Minahil ✦</em><span>ROOM-BASED MULTIPLAYER</span></div>
+</section>
+
+<section id="game" class="game hidden">
+ <div class="gameAtmos"><img src="cinematic-world.png"><div class="gameMask"></div><div class="drift d1"></div><div class="drift d2"></div></div>
+ <header><div class="logo">M<sup>✦</sup></div><div class="scoreboard"><div class="score you">YOU <b id="myScore">0</b></div><div class="goal">FIRST TO <strong>10</strong></div><div class="score rival"><b id="theirScore">0</b> RIVAL</div></div><div class="roomTop">ROOM <button id="roomCode">-----</button></div></header>
+ <div class="arena"><canvas id="canvas" width="1000" height="600" tabindex="0"></canvas><div id="overlay" class="overlay"></div><div class="sector">NORTHERN SKY · LIVE SECTOR</div><div class="tinySign">· ✦ ·</div></div>
+ <footer>
+   <div class="roomCard"><small>ROOM CODE</small><strong id="roomCodeMirror">-----</strong><span>Share this code with a friend</span></div>
+   <div class="pilotCard"><small>PLAYER 1</small><strong id="meName">MINAHIL</strong><span>Celestial Pilot</span></div>
+   <div class="brandCard"><b>✦</b><em>MINAHIL</em></div>
+   <div class="pilotCard"><small>PLAYER 2</small><strong id="themName">WAITING</strong><span>Remote Rival</span></div>
+   <div class="settingCard"><small>STATUS</small><strong>LIVE ✦</strong><span>Real-time sync</span></div>
+ </footer>
+ <div class="mobileControls"><button data-dir="up">▲</button><div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div></div>
+</section>
+<script src="game.js"></script></body></html>
